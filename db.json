@@ -1,0 +1,288 @@
+{
+  "categories": [
+    { "id": "coffee", "name": "Cà phê máy" },
+    { "id": "tea", "name": "Trà & Trái cây" },
+    { "id": "iceblend", "name": "Đá xay & Sinh tố" },
+    { "id": "juice", "name": "Nước ép tươi nguyên chất" },
+    { "id": "bakery", "name": "Bánh ngọt & Tráng miệng" }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Latte Almond Hạnh Nhân",
+      "price": 59000,
+      "quantity": 35,
+      "category": "coffee",
+      "image": "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=400&q=80",
+      "badge": "Bán chạy",
+      "desc": "Espresso nguyên chất hòa quyện cùng sữa hạt hạnh nhân béo ngậy thơm nồng.",
+      "ingredients": "Espresso Arabica, sữa hạt hạnh nhân thanh trùng, sốt béo thực vật.",
+      "volume": "500ml (Size L)"
+    },
+    {
+      "id": "2",
+      "name": "Trà Đào Cam Sả",
+      "price": 45000,
+      "quantity": 60,
+      "category": "tea",
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=400&q=80",
+      "badge": "Best Seller",
+      "desc": "Trà đen ủ lạnh thanh mát quyện vị cam vàng tươi và từng lát đào vàng giòn ngọt.",
+      "ingredients": "Cốt trà đen Ceylon, đào ngâm giòn, nước cốt cam vàng, sả tươi đập dập.",
+      "volume": "650ml (Size L)"
+    },
+    {
+      "id": "3",
+      "name": "Cà Phê Muối Xứ Huế",
+      "price": 39000,
+      "quantity": 50,
+      "category": "coffee",
+      "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=400&q=80",
+      "badge": "Best Seller",
+      "desc": "Cốt cà phê phin đậm đặc hòa cùng lớp kem mặn béo ngậy chuẩn vị cố đô.",
+      "ingredients": "Cà phê Robusta Đắk Lắk, sữa đặc, kem béo thực vật, muối hồng.",
+      "volume": "350ml (Size M)"
+    },
+    {
+      "id": "4",
+      "name": "Sinh Tố Bơ Hạt Điều",
+      "price": 65000,
+      "quantity": 23,
+      "category": "iceblend",
+      "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=400&q=80",
+      "badge": "Bán chạy",
+      "desc": "Bơ sáp dẻo quánh xay cùng hạt điều bổ dưỡng mang đến vị bùi béo ngậy tự nhiên.",
+      "ingredients": "Bơ sáp Đắk Lắk chín cây, hạt điều rang bùi, sữa tươi không đường, đá tuyết.",
+      "volume": "500ml (Size L)"
+    },
+    {
+      "id": "5",
+      "name": "Trà Sữa Oolong Nướng",
+      "price": 48000,
+      "quantity": 45,
+      "category": "tea",
+      "image": "https://images.unsplash.com/photo-1558857563-b37cf5a4f78c?auto=format&fit=crop&w=400&q=80",
+      "badge": "Best Seller",
+      "desc": "Cốt trà oolong sao nướng đậm hương khói nhẹ kết hợp cùng sữa tươi thanh béo.",
+      "ingredients": "Lá trà Oolong nướng than hoa, sữa chua béo, trân châu đen giòn.",
+      "volume": "650ml (Size L)"
+    },
+    {
+      "id": "6",
+      "name": "Caramel Macchiato",
+      "price": 55000,
+      "quantity": 40,
+      "category": "coffee",
+      "image": "https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=400&q=80",
+      "badge": "Bán chạy",
+      "desc": "Vị sữa tươi béo dịu đan xen lớp espresso đậm đà cùng sốt caramel thơm ngọt lừng danh.",
+      "ingredients": "Espresso Arabica, vani Pháp, sữa thanh trùng đánh bọt, sốt caramel.",
+      "volume": "500ml (Size L)"
+    },
+    {
+      "id": "7",
+      "name": "Trà Mãng Cầu Đắk Lắk",
+      "price": 49000,
+      "quantity": 35,
+      "category": "tea",
+      "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=400&q=80",
+      "badge": "Hot Trend",
+      "desc": "Thịt mãng cầu tươi dầm ngọt dịu chua thanh trên nền trà lài thơm ngát giải khát tức thì.",
+      "ingredients": "Thịt mãng cầu ta tươi, trà hoa lài thượng hạng, siro đường mía.",
+      "volume": "650ml (Size L)"
+    },
+    {
+      "id": "8",
+      "name": "Matcha Đá Xay Macchiato",
+      "price": 59000,
+      "quantity": 30,
+      "category": "iceblend",
+      "image": "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=400&q=80",
+      "badge": "Hot Trend",
+      "desc": "Bột matcha Uji Nhật Bản nguyên chất xay tuyết phủ lớp kem phô mai béo ngậy mặn mà.",
+      "ingredients": "Matcha Uji Nhật, sữa tươi, kem phô mai Macchiato mặn dịu.",
+      "volume": "500ml (Size L)"
+    },
+    {
+      "id": "9",
+      "name": "Cold Brew Cam Vàng",
+      "price": 49000,
+      "quantity": 25,
+      "category": "coffee",
+      "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=400&q=80",
+      "badge": "Đặc biệt",
+      "desc": "Cà phê Arabica ủ lạnh suốt 18 tiếng mang hương vị hoa quả tự nhiên tươi mới và sảng khoái.",
+      "ingredients": "Cà phê Arabica Cầu Đất ủ lạnh 18h, lát cam vàng Úc tươi, hương thảo.",
+      "volume": "400ml (Size M)"
+    },
+    {
+      "id": "10",
+      "name": "Trà Dâu Tây Pha Lê",
+      "price": 48000,
+      "quantity": 30,
+      "category": "tea",
+      "image": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=400&q=80",
+      "badge": "Yêu thích",
+      "desc": "Dâu tây tươi ngào mật chua ngọt kết hợp topping thạch ngọc trai giòn sần sật thanh mát.",
+      "ingredients": "Dâu tây Đà Lạt dầm nhuyễn, trà thanh hương, thạch pha lê giòn.",
+      "volume": "650ml (Size L)"
+    },
+    {
+      "id": "11",
+      "name": "Chocolate Cookie Đá Xay",
+      "price": 62000,
+      "quantity": 28,
+      "category": "iceblend",
+      "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=400&q=80",
+      "badge": "Yêu thích",
+      "desc": "Sô-cô-la nguyên chất xay đá tuyết mịn màng hòa quyện bánh oreo giòn rụm ngậy béo.",
+      "ingredients": "Socola Đắk Lắk nguyên chất, bánh Oreo nướng, kem bông whipping cream.",
+      "volume": "500ml (Size L)"
+    },
+    {
+      "id": "12",
+      "name": "Trà Ổi Hồng Hạt Chia",
+      "price": 45000,
+      "quantity": 40,
+      "category": "tea",
+      "image": "https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?auto=format&fit=crop&w=400&q=80",
+      "badge": "Healthy",
+      "desc": "Cốt trà thanh khiết dồi dào vitamin C từ ổi hồng chín kết hợp hạt chia thanh lọc cơ thể.",
+      "ingredients": "Nước cốt ổi hồng ruột đào, hạt chia hữu cơ, trà xanh thanh nhẹ.",
+      "volume": "650ml (Size L)"
+    },
+    {
+      "id": "13",
+      "name": "Nước Ép Cam Táo Nguyên Chất",
+      "price": 45000,
+      "quantity": 30,
+      "category": "juice",
+      "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=400&q=80",
+      "badge": "Healthy",
+      "desc": "Cam sành mọng nước ép lạnh cùng táo Envy ngọt thơm, bổ sung vitamin C tự nhiên giúp đẹp da.",
+      "ingredients": "Cam vàng tươi ép lạnh, táo Envy ép tươi 100% không đường.",
+      "volume": "400ml (Size M)"
+    },
+    {
+      "id": "14",
+      "name": "Nước Ép Dưa Hấu Bạc Hà",
+      "price": 40000,
+      "quantity": 35,
+      "category": "juice",
+      "image": "https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd?auto=format&fit=crop&w=400&q=80",
+      "badge": null,
+      "desc": "Dưa hấu đỏ ngọt lịm ép cùng lá bạc hà the mát, thức uống thanh lọc cơ thể cực tốt ngày hè.",
+      "ingredients": "Dưa hấu không hạt, lá bạc hà tươi, cốt chanh tươi.",
+      "volume": "400ml (Size M)"
+    },
+    {
+      "id": "15",
+      "name": "Nước Ép Cần Tây Dứa Tươi",
+      "price": 45000,
+      "quantity": 25,
+      "category": "juice",
+      "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=400&q=80",
+      "badge": "Healthy",
+      "desc": "Nước ép cần tây Đà Lạt thanh lọc cơ thể phối hợp cùng dứa mật ngọt dịu rất dễ uống.",
+      "ingredients": "Cần tây sạch thủy canh, dứa mật chín, táo xanh ép tươi.",
+      "volume": "400ml (Size M)"
+    },
+    {
+      "id": "16",
+      "name": "Bánh Croissant Bơ Tỏi",
+      "price": 35000,
+      "quantity": 20,
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=400&q=80",
+      "badge": "Bán chạy",
+      "desc": "Bánh sừng bò ngàn lớp giòn rụm bên ngoài, thơm lừng hương bơ Pháp và sốt tỏi béo ngậy.",
+      "ingredients": "Bột mì nguyên cám, bơ Anchor Pháp, tỏi băm, lá ngải giấm tây.",
+      "volume": "1 chiếc (120g)"
+    },
+    {
+      "id": "17",
+      "name": "Bánh Tiramisu Truyền Thống",
+      "price": 45000,
+      "quantity": 18,
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=400&q=80",
+      "badge": "Yêu thích",
+      "desc": "Lớp bánh mềm thấm đẫm hương cà phê espresso, phủ phô mai Mascarpone béo dịu và bột cacao.",
+      "ingredients": "Bánh sampa, phô mai Mascarpone Ý, espresso Arabica, bột ca cao nguyên chất.",
+      "volume": "1 phần (150g)"
+    },
+    {
+      "id": "18",
+      "name": "Bánh Mousse Chanh Leo",
+      "price": 42000,
+      "quantity": 22,
+      "category": "bakery",
+      "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=400&q=80",
+      "badge": null,
+      "desc": "Vị chua thanh mát mẻ từ nước cốt chanh dây hòa cùng lớp kem cheese béo nhẹ, ăn không ngấy.",
+      "ingredients": "Nước cốt chanh leo tươi, kem phô mai tươi, gelatin hữu cơ, đế bông lan.",
+      "volume": "1 phần (130g)"
+    },
+    {
+      "id": "19",
+      "name": "Latte Bạc Xỉu Pha Máy",
+      "price": 45000,
+      "quantity": 40,
+      "category": "coffee",
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80",
+      "badge": null,
+      "desc": "Bạc xỉu truyền thống pha máy nhiều sữa ít đắng cực kỳ dễ uống cho ngày mới sảng khoái.",
+      "ingredients": "Cà phê pha máy, sữa đặc Ông Thọ, sữa tươi tiệt trùng béo nhẹ.",
+      "volume": "400ml (Size M)"
+    },
+    {
+      "id": "20",
+      "name": "Americano Đá Đậm Gu",
+      "price": 35000,
+      "quantity": 50,
+      "category": "coffee",
+      "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=400&q=80",
+      "badge": null,
+      "desc": "Espresso pha loãng với nước lạnh giữ vị đậm đà thanh nhẹ giúp tỉnh táo tập trung cả ngày.",
+      "ingredients": "2 shot Espresso Arabica rang vừa, nước khoáng tinh khiết, đá lạnh.",
+      "volume": "500ml (Size L)"
+    },
+    {
+      "id": "21",
+      "name": "Mocha Hạnh Nhân Đá Xay",
+      "price": 59000,
+      "quantity": 20,
+      "category": "iceblend",
+      "image": "https://images.unsplash.com/photo-1579888944880-d98341245702?auto=format&fit=crop&w=400&q=80",
+      "badge": null,
+      "desc": "Cà phê mocha đậm đặc xay đá rắc vụn hạt hạnh nhân nướng thơm giòn bùi béo.",
+      "ingredients": "Espresso, sốt socola đen, vụn hạt hạnh nhân nướng, sữa tươi thanh trùng.",
+      "volume": "500ml (Size L)"
+    }
+  ],
+  "users": [
+    {
+      "name": "Nguyễn Văn An",
+      "phone": "0905123456",
+      "email": "an.nguyen@gmail.com",
+      "password": "123",
+      "role": "user",
+      "id": "usr-01"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-5821",
+      "customer": "Nguyễn Văn An",
+      "phone": "0905123456",
+      "address": "123 Hải Phòng, Hải Châu, Đà Nẵng",
+      "date": "26/10/2026",
+      "total": 104000,
+      "status": "Đang giao",
+      "items": [
+        { "name": "Latte Almond Hạnh Nhân", "qty": 1, "price": 59000 },
+        { "name": "Trà Đào Cam Sả", "qty": 1, "price": 45000 }
+      ]
+    }
+  ]
+}

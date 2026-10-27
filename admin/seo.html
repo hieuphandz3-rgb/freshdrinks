@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - Cấu Hình SEO & Facebook (WEB2053)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="../css/admin.css" />
+  <style>
+    .seo-card-box {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 24px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+      margin-bottom: 24px;
+    }
+    .seo-card-box h3 {
+      font-size: 17px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .google-preview {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 14px;
+      font-family: Arial, sans-serif;
+    }
+    .google-preview .g-url { font-size: 13px; color: #202124; margin-bottom: 4px; }
+    .google-preview .g-title { font-size: 18px; color: #1a0dab; font-weight: 600; cursor: pointer; text-decoration: underline; margin-bottom: 4px; }
+    .google-preview .g-desc { font-size: 13px; color: #4d5156; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <div class="admin-shell">
+    <aside class="admin-sidebar">
+      <h3><i class="fa-solid fa-mug-hot"></i> FreshDrinks</h3>
+      <ul class="admin-nav">
+        <li><a href="index.html"><i class="fa-solid fa-chart-pie"></i> Dashboard</a></li>
+        <li><a href="categories.html"><i class="fa-solid fa-tags"></i> Quản lý Danh mục</a></li>
+        <li><a href="products.html"><i class="fa-solid fa-mug-saucer"></i> Quản lý Sản phẩm</a></li>
+        <li><a href="users.html"><i class="fa-solid fa-users"></i> Khách hàng</a></li>
+        <li><a href="orders.html"><i class="fa-solid fa-receipt"></i> Đơn hàng</a></li>
+        <li><a href="seo.html" class="active"><i class="fa-solid fa-magnifying-glass-chart"></i> Cấu hình SEO & FB</a></li>
+        <li><a href="../index.html" style="color:#ef4444; margin-top: auto;"><i class="fa-solid fa-arrow-right-from-bracket"></i> Thoát Admin</a></li>
+      </ul>
+    </aside>
+
+    <main class="admin-view-panel">
+      <div class="admin-header-title">
+        <h1><i class="fa-solid fa-sliders" style="color:var(--admin-primary-dark, #d97706);"></i> Cấu Hình SEO & Facebook (Mục 2 - ASM)</h1>
+      </div>
+
+      <!-- 1. CẤU HÌNH SEO HỆ THỐNG -->
+      <div class="seo-card-box">
+        <h3><i class="fa-solid fa-globe" style="color:#2563eb;"></i> 1. Tối Ưu SEO Hệ Thống & Google Search Console</h3>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+          <div class="field-group">
+            <label>Tiêu đề Trang chủ (Meta Title)</label>
+            <input id="seoSiteTitle" value="FreshDrinks - Chuỗi Cà Phê Pha Máy & Trà Trái Cây Đậm Gu" oninput="updateSnippet()">
+          </div>
+          <div class="field-group">
+            <label>Mã xác minh Google Search Console (Meta Tag)</label>
+            <input value="google-site-verification=Abc123XyZ456FreshDrinksToken2026">
+          </div>
+        </div>
+        <div class="field-group" style="margin-top:14px;">
+          <label>Mô tả Meta Description hệ thống</label>
+          <textarea id="seoSiteDesc" rows="2" oninput="updateSnippet()">Thưởng thức cà phê rang mộc nguyên chất, trà đào cam sả và các loại đồ uống thanh mát tại FreshDrinks. Đặt hàng online giao nhanh 20 phút.</textarea>
+        </div>
+        <div class="field-group" style="margin-top:14px;">
+          <label>Đường dẫn Sơ đồ trang web (Sitemap XML)</label>
+          <input value="https://freshdrinks.vn/sitemap_index.xml" readonly style="background:#f1f5f9; color:#475569;">
+        </div>
+
+        <label style="font-size:13px; font-weight:700; color:#334155; margin-top:16px; display:block;">Xem trước hiển thị trên kết quả tìm kiếm Google:</label>
+        <div class="google-preview">
+          <div class="g-url">https://freshdrinks.vn › menu</div>
+          <div class="g-title" id="prevTitle">FreshDrinks - Chuỗi Cà Phê Pha Máy & Trà Trái Cây Đậm Gu</div>
+          <div class="g-desc" id="prevDesc">Thưởng thức cà phê rang mộc nguyên chất, trà đào cam sả và các loại đồ uống thanh mát tại FreshDrinks. Đặt hàng online giao nhanh 20 phút.</div>
+        </div>
+      </div>
+
+      <!-- 2. CẤU HÌNH SEO SẢN PHẨM & BÀI VIẾT -->
+      <div class="seo-card-box">
+        <h3><i class="fa-solid fa-file-pen" style="color:#16a34a;"></i> 2. Cấu Hình SEO Theo Từng Sản Phẩm & Bài Viết</h3>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+          <div class="field-group">
+            <label>Chọn Sản phẩm / Bài viết cần tối ưu SEO</label>
+            <select id="seoProdSelect">
+              <option value="1">Trà Đào Cam Sả Tươi Mát</option>
+              <option value="2">Latte Almond Hạnh Nhân</option>
+              <option value="3">Bài viết: Bí quyết pha chế Cold Brew tại nhà</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label>Từ khóa chính (Focus Keyword)</label>
+            <input value="trà đào cam sả ngon">
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:14px;">
+          <div class="field-group">
+            <label>Đường dẫn tĩnh chuẩn SEO (Canonical Slug)</label>
+            <input value="/san-pham/tra-dao-cam-sa-tuoi-mat">
+          </div>
+          <div class="field-group">
+            <label>Điểm đánh giá SEO On-page (Rank Math tiêu chuẩn)</label>
+            <input value="86 / 100 (Đạt tiêu chuẩn SEO Tốt)" readonly style="background:#dcfce7; color:#15803d; font-weight:800;">
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. CẤU HÌNH FACEBOOK OPEN GRAPH & PIXEL -->
+      <div class="seo-card-box">
+        <h3><i class="fa-brands fa-facebook" style="color:#1877f2;"></i> 3. Cấu Hình Các Chức Năng Của Facebook Phần Hệ Thống</h3>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+          <div class="field-group">
+            <label>Mã Facebook Pixel ID (Theo dõi chiến dịch Ads)</label>
+            <input value="684920491823901">
+          </div>
+          <div class="field-group">
+            <label>Facebook Fanpage URL (Liên kết Backlink)</label>
+            <input value="https://facebook.com/freshdrinks.vietnam">
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:14px;">
+          <div class="field-group">
+            <label>Tiêu đề chia sẻ Facebook (og:title)</label>
+            <input value="Menu Đồ Uống Mùa Hè Cực Đã - FreshDrinks">
+          </div>
+          <div class="field-group">
+            <label>Link ảnh đại diện khi share Facebook (og:image)</label>
+            <input value="https://images.unsplash.com/photo-1556679343-c7306c1976bc">
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-primary" onclick="alert('✅ Đã lưu cấu hình SEO và Facebook thành công!')" style="padding:14px 28px; font-size:15px;">
+        <i class="fa-solid fa-floppy-disk"></i> Lưu Tất Cả Cấu Hình SEO & Facebook
+      </button>
+    </main>
+  </div>
+
+  <script>
+    function updateSnippet() {
+      document.getElementById('prevTitle').innerText = document.getElementById('seoSiteTitle').value;
+      document.getElementById('prevDesc').innerText = document.getElementById('seoSiteDesc').value;
+    }
+  </script>
+</body>
+</html>
